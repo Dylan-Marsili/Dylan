@@ -1,6 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/646ac4fad6.js" crossorigin="anonymous"></script>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,80 +13,93 @@
     <title>Contacto</title>
 </head>
 <body>
-    <header class="header">
-        <div class="header__logocontenedor">
-            <a class="header__logocontendor--anchor" href="#">
-                <img class="header__logocontenedor--img" src="../img/logo.png" alt="LOGO DE MI EMPRESA">
-            </a>
-        </div>
-        <nav class="header__nav">
-            <a class="header__anchor" href="../index.html">Inicio</a>
-            <a class="header__anchor" href="tienda.html">Tienda</a>
-            <a class="header__anchor" href="records.html">Records</a>
-            <a class="header__anchor" href="stats.html">Estadisticas</a>
-            <a class="header__anchor header__anchor--activo" href="#">Contacto</a>
-        </nav>
+    <header class="header sticky-sm-top sticky-md-top sticky-lg-top sticky-xl-top sticky-xxl-top">
+        <nav class="navbar navbar-expand-lg bg-body-tertiary p-0">
+            <div class="color container-fluid">
+              <a class="navbar-brand color a_img" href="#"><img class="header__logocontenedor--img color" src="../img/logo.png" alt="Logo"></a>
+              <button class="navbar-toggler color" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon color"></span>
+              </button>
+              <div class="collapse navbar-collapse color justify-content-end" id="navbarNavAltMarkup">
+                <div class="navbar-nav color">
+                  <a class="nav-link item" href="../index.html">Inicio</a>
+                  <a class="nav-link item" href="tienda.html">Tienda</a>
+                  <a class="nav-link item" href="records.html">Records</a>
+                  <a class="nav-link item" href="pf.html">Preguntas</a>
+                  <a class="nav-link item active" aria-current="page" href="#">Contacto</a>
+                </div>
+              </div>
+            </div>
+          </nav>
     </header>
-        <div>
-            <form action="#" method="GET" enctype="text/plain">
-                <fieldset>
-                    <legend class="form__legend">Contactanos!</legend>
-                    <span class="form__span">Sexo:</span>
-                    <div class="form__div">
-                        <label for="Sex">Masculino:</label>
-                        <input type="radio" name="Sex" id="Sex" value="masculino">
-                        <label for="Sex">Femenino:</label>
-                        <input type="radio" name="Sex" id="Sex" value="femenino">
-                    </div>
-                    <div class="form__nombre">
-                        <div class="form__label">
-                            <label for="name">Nombre:</label>
-                        </div>
-                        <div class="form__input">
-                            <input type="text" name="name" id="name" required>
-                        </div>
-                    </div>
-                    <div class="form_apellido">
-                        <div class="form__label">
-                            <label for="name2">Apellido:</label>
-                        </div>
-                        <div class="form__apellido--input">
-                            <input type="text" name="name2" id="name2" required>
-                        </div>
-                    </div>
-                    <div class="form_talle">
-                        <div class="form__talle--label">
-                            <label for="talle">Talle:</label>
-                        </div>
-                        <div class="form__talle--select">
-                            <select name="talle" id="talles">
-                                <option value="L">Largo</option>
-                                <option value="M">Mediano</option>
-                                <option value="P">Pequeño</option>
-                            </select>
-                        </div>
-                    </div>
-                    <input type="submit" value="Enviar">
-                    <input type="reset" value="Borrar">
-                </fieldset>
+        <main>
+            <form action="" class="register-form">
+                <div class="input-line">
+                    <label class="label-form" for="name">Nombre</label>
+                    <input type="text" class="input-field" placeholder="Escribe tu nombre">
+                </div>
+                <div class="input-line">
+                    <label class="label-form" for="name">Apellidos</label>
+                    <input type="text" class="input-field" placeholder="Escribe tus apellidos">
+                </div>
+                <div class="input-line">
+                    <label class="label-form" for="name">Email</label>
+                    <input type="email" class="input-field" placeholder="Escribe tu email de contacto">
+                </div>
+                <div class="input-line">
+                    <label class="label-form" for="name">Contraseña</label>
+                    <input type="password" class="input-field" placeholder="Escribe tu contraseña">
+                </div>
+                <div class="input-line">
+                    <label class="label-form" for="name">Repetir contraseña</label>
+                    <input type="password" class="input-field" placeholder="Repite la contraseña">
+                </div>
+                <button class="button-form">Completar Registro</button>
+                <a href="" class="second-button">¿Ya tienes una cuenta?</a>
             </form>
-        </div>
+        </main>
         <footer>
-            <div class="footer__logoempresa">
-                <img class="footer__logoempresa--img" src="../img/logo.png" alt="LOGO DE MI EMPRESA">
+            <div class="footer-container">
+                <div class="footer-content-container">
+                    <img src="../img/logo.png" alt="Logo">
+                    <span class="footer-info text-black">1010 1010 1010</span>
+                    <span class="footer-info text-black">El10@maradona.com</span>
+                </div>
+                <div class="footer-menus">
+                    <div class="footer-content-container">
+                        <span class="menu-title">Menu</span>
+                        <a href="../index.html" class="menu-item-footer text-black">Inicio</a>
+                        <a href="tienda.html" class="menu-item-footer text-black">Tienda</a>
+                        <a href="records.html" class="menu-item-footer text-black">Records</a>
+                        <a href="pf.html" class="menu-item-footer text-black">Preguntas</a>
+                        <a href="#" class="menu-item-footer text-black">Contacto</a>
+                    </div>
+                    <div class="footer-content-container">
+                        <span class="menu-title">Legal</span>
+                        <a href="" class="menu-item-footer text-black">Privacy Policy</a>
+                        <a href="" class="menu-item-footer text-black">Cookies</a>
+                        <a href="" class="menu-item-footer text-black">Legal Advice</a>
+                    </div>
+                </div>
+                
+                <div class="footer-content-container">
+                    <span class="menu-title">Siguenos!</span>
+                    <div class="social-container">
+                        <a href="" class="social-link"><img src="../img/FacebookBlanco.png"></img></a>
+                        <a href="" class="social-link"><img src="../img/InstagramBlanco.png"></img></a>
+                        <a href="" class="social-link"><img src="../img/TwitterBlanco.png"></img></a>
+                        <a href="" class="social-link"><img src="../img/LinkedinBlanco.png"></img></a>
+                    </div>
+                </div>
             </div>
-            <div class="footer__logos">
-                <a href="#">
-                    <img src="../img/instagram.png" alt="Instagram">
-                </a>
-                 <a href="#">
-                    <img src="../img/facebook.png" alt="Facebook">
-                </a>
-                <a href="#" class="whatsapp">
-                    <img src="../img/whatsapp.png" alt="Whatsapp">
-                </a>
+            <div class="copyright-container">
+                <span class="copyright">&copy; Copyright 2023, Maradona. All rights reserved.</span>
             </div>
-            <h4 class="footer__h4">marsilidylan@gmail.com</h4>
         </footer>
+        <script>
+            AOS.init();
+          </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
 </body>
 </html>
