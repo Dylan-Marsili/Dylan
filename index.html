@@ -1,6 +1,12 @@
 <!DOCTYPE html>
 <html lang="en">
     <head>
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css">
+        <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Exo+2:wght@300&display=swap" rel="stylesheet">
+        <script src="https://kit.fontawesome.com/646ac4fad6.js" crossorigin="anonymous"></script>
         <meta charset="UTF-8">
         <meta http-equiv="X-UA-Compatible" content="IE=edge">
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,73 +14,103 @@
         <link rel="stylesheet" href="./css/styles.css">
     </head>
     <body class="body_index">
-        <header class="header">
-            <div class="header__logocontenedor">
-                <a class="header__logocontendor--anchor" href="#">
-                    <img class="header__logocontenedor--img" src="./img/logo.png" alt="LOGO DE MI EMPRESA">
-                </a>
-            </div>
-            <nav class="header__nav">
-                <a class="header__anchor header__anchor--activo " href="#">Inicio</a>
-                <a class="header__anchor" href="./pages/tienda.html">Tienda</a>
-                <a class="header__anchor" href="./pages/records.html">Records</a>
-                <a class="header__anchor" href="./pages/stats.html">Estadisticas</a>
-                <a class="header__anchor" href="./pages/contacto.html">Contacto</a>
-            </nav>
+        <header class="header sticky-sm-top sticky-md-top sticky-lg-top sticky-xl-top sticky-xxl-top">
+            <nav class="navbar navbar-expand-lg bg-body-tertiary p-0">
+                <div class="color container-fluid">
+                  <a class="navbar-brand color a_img" href="#"><img class="header__logocontenedor--img color" src="./img/logo.png" alt="Logo"></a>
+                  <button class="navbar-toggler color" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon color"></span>
+                  </button>
+                  <div class="collapse navbar-collapse color justify-content-end" id="navbarNavAltMarkup">
+                    <div class="navbar-nav fade-up color">
+                      <a class="nav-link item active"  aria-current="page" href="#">Inicio</a>
+                      <a class="nav-link item" href="./pages/tienda.html">Tienda</a>
+                      <a class="nav-link item" href="./pages/records.html">Records</a>
+                      <a class="nav-link item" href="./pages/pf.html">Preguntas</a>
+                      <a class="nav-link item" href="./pages/contacto.html">Contacto</a>
+                    </div>
+                  </div>
+                </div>
+              </nav>
         </header>
         <main class="info">
-            <div class="info__imagen">
-                <img src="./img/diegomaradonaindexjpg.jpg" alt="Diego Maradona">
-            </div>
-            <div class="queencontraras">
-                <div class="queencontraras__h2">
-                    <h2>¿Que encontraras en este sitio web?</h2>
+                <img class="info--imagen " src="./img/diegomaradonaindexjpg.jpg" alt="Diego Maradona">
+                <div class="queencontraras">
+                    <div class="queencontraras__h2">
+                        <h2>¿Que encontraras en este sitio web?</h2>
+                    </div>
+                    <div class="queencontraras__p">
+                        <p class="">En este <a href="https://es.wikipedia.org/wiki/Sitio_web">Sitio Web</a> encontraras todo tipo de informacion sobre Diego Armando Maradona,tales como sus estadisticas, su historia y <span class="italic">¡tambien podes encontrar una tienda con ropa de Maradona!</span></p>
+                    </div>
                 </div>
-                <div class="queencontraras__p">
-                    <p>En este <a href="https://es.wikipedia.org/wiki/Sitio_web">Sitio Web</a> encontraras todo tipo de informacion sobre Diego Armando Maradona,tales como sus estadisticas, su historia y <span class="italic">¡tambien podes encontrar una tienda con ropa de Maradona!</span></p>
+                <div class="cuandonacio">
+                    <div class="cuandonacio__h2">
+                        <h2>¿Cuando nacio Maradona?</h2>
+                    </div>
+                    <div class="cuandonacio__p">
+                        <p>Nació, según consta en el Registro Civil, el día 30 de octubre de 1960 en Lanús, aunque todos lo identifiquen como el Pelusa de Villa Fiorito, donde transcurrió su infancia y desde donde saltó a la fama.</p>
+                    </div>
                 </div>
-            </div>
-            <div class="quienfue">
-                <div class="quienfue__h2">
-                       <h2>¿Quien fue Maradona?</h2>
+                <div class="quienfue">
+                    <div class="quienfue__h2">
+                            <h2>¿Quien fue Maradona?</h2>
+                    </div>
+                    <div class="quienfue__p">
+                        <p>Diego Armando Maradona fue un futbolista y entrenador argentino. Como jugador, se desempeñó como mediocampista ofensivo o delantero, y es reconocido por numerosos especialistas, exfutbolistas y personalidades internacionales como <span class="italic">uno de los mejores futbolistas en la historia<span></p>
+                    </div>
+                    </div>
+                <div class="comomurio">
+                    <div class="comomurio__h2">
+                        <h2>¿Cuando y como murio Maradona?</h2>
+                    </div>
+                    <div class="comomurio__p">
+                        <p>Maradona falleció a los 60 años el 25 de noviembre de 2020 como consecuencia de un <span class="italic">"edema agudo de pulmón derivado de una insuficiencia cardíaca crónica"</span>.Tambien se dice que su muerte fue a proposito, los acusados fueron el neurocirujano y el medico personal de Maradona</p>
+                    </div>
                 </div>
-                <div class="quienfue__p">
-                   <p>Diego Armando Maradona fue un futbolista y entrenador argentino. Como jugador, se desempeñó como mediocampista ofensivo o delantero, y es reconocido por numerosos especialistas, exfutbolistas y personalidades internacionales como <span class="italic">uno de los mejores futbolistas en la historia<span></p>
-                </div>
-            </div>
-            <div class="cuandonacio">
-                <div class="cuandonacio__h2">
-                    <h2>¿Cuando nacio Maradona?</h2>
-                </div>
-                <div class="cuandonacio__p">
-                    <p>Nació, según consta en el Registro Civil, el día 30 de octubre de 1960 en Lanús, aunque todos lo identifiquen como el Pelusa de Villa Fiorito, donde transcurrió su infancia y desde donde saltó a la fama.</p>
-                </div>
-            </div>
-            <div class="comomurio">
-                <div class="comomurio__h2">
-                    <h2>¿Cuando y como murio Maradona?</h2>
-                </div>
-                <div class="comomurio__p">
-                    <p>Maradona falleció a los 60 años el 25 de noviembre de 2020 como consecuencia de un <span class="italic">"edema agudo de pulmón derivado de una insuficiencia cardíaca crónica"</span>.Tambien se dice que su muerte fue a proposito, los acusados fueron el neurocirujano y el medico personal de Maradona</p>
-                </div>
-            </div>
-        </main> 
+        </main>
+             
         <footer>
-            <div class="footer__logoempresa">
-                <img class="footer__logoempresa--img" src="./img/logo.png" alt="LOGO DE MI EMPRESA">
+            <div class="footer-container">
+                <div class="footer-content-container">
+                    <img src="./img/logo.png" alt="Logo">
+                    <span class="footer-info text-white">1010 1010 1010</span>
+                    <span class="footer-info text-white">El10@maradona.com</span>
+                </div>
+                <div class="footer-menus">
+                    <div class="footer-content-container">
+                        <span class="menu-title">Menu</span>
+                        <a href="#" class="menu-item-footer text-black">Inicio</a>
+                        <a href="./pages/tienda.html" class="menu-item-footer text-black">Tienda</a>
+                        <a href="./pages/records.html" class="menu-item-footer text-black">Records</a>
+                        <a href="./pages/pf.html" class="menu-item-footer text-black">Preguntas</a>
+                        <a href="./pages/contacto.html" class="menu-item-footer text-black">Contacto</a>
+                    </div>
+                    <div class="footer-content-container">
+                        <span class="menu-title">Legal</span>
+                        <a href="" class="menu-item-footer text-black">Privacy Policy</a>
+                        <a href="" class="menu-item-footer text-black">Cookies</a>
+                        <a href="" class="menu-item-footer text-black">Legal Advice</a>
+                    </div>
+                </div>
+                
+                <div class="footer-content-container">
+                    <span class="menu-title">Siguenos!</span>
+                    <div class="social-container">
+                        <a href="" class="social-link"><img src="./img/FacebookBlanco.png"></img></a>
+                        <a href="" class="social-link"><img src="./img/InstagramBlanco.png"></img></a>
+                        <a href="" class="social-link"><img src="./img/TwitterBlanco.png"></img></a>
+                        <a href="" class="social-link"><img src="./img/LinkedinBlanco.png"></img></a>
+                    </div>
+                </div>
             </div>
-            <div class="footer__logos">
-                <a href="#">
-                    <img src="./img/instagram.png" alt="Instagram">
-                </a>
-                 <a href="#">
-                    <img src="./img/facebook.png" alt="Facebook">
-                </a>
-                <a href="#" class="whatsapp">
-                    <img src="./img/whatsapp.png" alt="Whatsapp">
-                </a>
+            <div class="copyright-container">
+                <span class="copyright">&copy; Copyright 2023, Maradona. All rights reserved.</span>
             </div>
-            <h4 class="footer__h4">marsilidylan@gmail.com</h4>
         </footer>
+        <script>
+            AOS.init();
+          </script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js" integrity="sha384-mQ93GR66B00ZXjt0YO5KlohRA5SY2XofN4zfuZxLkoj1gXtW8ANNCe9d5Y3eG5eD" crossorigin="anonymous"></script>
     </body>
 </html>
