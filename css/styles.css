@@ -1,4 +1,4 @@
-                                                            /* Iconos */ 
+                                                            /* Imports */ 
 @import url("https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.3/font/bootstrap-icons.css");
                                                             /* Reseteo */   
 
@@ -345,7 +345,7 @@ footer .social-link:nth-of-type(3){
 }
                                                             /* Tienda */
 
-.ofertass{
+.tienda{
     padding-top: 1rem;
     padding-right: 4rem;
 }
@@ -353,7 +353,7 @@ footer .social-link:nth-of-type(3){
     margin: 4rem;
 }
 
-.ofertass img{
+.tienda img{
     width: 17rem;
 }
 .vh100{

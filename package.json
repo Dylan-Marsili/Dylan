@@ -1,0 +1,21 @@
+{
+  "name": "desarrollo-web",
+  "version": "1.0.0",
+  "description": "Un pakete de node para compilar SCSS de CSS",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build-css": "node-sass --include-path scss sass/main.scss css/compilado.css",
+    "watch-css": "nodemon -e scss -x \"npm run build-css\""
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Dylan-Marsili/Dylan.git"
+  },
+  "author": "Dylan Marsili",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Dylan-Marsili/Dylan/issues"
+  },
+  "homepage": "https://github.com/Dylan-Marsili/Dylan#readme"
+}
