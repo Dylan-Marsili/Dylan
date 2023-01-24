@@ -1,6 +1,10 @@
-*{
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    transition: 0,5s;
-}
+@import "_parciales/_reseteo.scss";
+@import "_parciales/_body.scss";
+@import "_parciales/_modificadores.scss";
+@import "_parciales/_header.scss";
+@import "_parciales/_footer.scss";
+@import "_parciales/_index.scss";
+@import "_parciales/_tienda.scss";
+@import "_parciales/_records.scss";
+@import "_parciales/_pf.scss";
+@import "_parciales/contacto.scss";
