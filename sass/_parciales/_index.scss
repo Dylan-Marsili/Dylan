@@ -1,0 +1,124 @@
+.info{
+    display:flex;
+    justify-content: center;
+    display: grid;
+    grid-template-columns: 500px 600px 500px;
+    grid-template-rows: 400px 400px;
+    grid-template-areas: "queencontraras img cuandonacio" "quienfue img comomurio" ;
+    text-align: center;
+    &--imagen{
+        height: 650px;
+        padding-top: 6rem;
+        grid-area: img;
+    }
+    .comomurio{
+        padding-top: 30px;
+    
+        grid-area: comomurio;
+    }
+    .quienfue{
+        padding-top: 26px;  
+        grid-area: quienfue;
+    }
+    .queencontraras{
+        padding-top: 100px;
+        grid-area: queencontraras;
+    }
+    .cuandonacio{
+        padding-top: 100px;
+        grid-area: cuandonacio;
+    }
+    &__imagen img{
+        padding-top: 1rem;
+        padding-left: 0.5rem;
+        height: 600px;
+    }
+        
+    & p{
+        font-size: 1.4rem;
+    }
+    .queencontraras__p a{
+        color: black;
+    }
+    & h2{
+        color: black;
+    }
+    & p{
+        color:black
+    }
+}
+
+@media (max-width: 768px) {
+    .info{
+        display: grid;
+        grid-template-columns: 350px;
+        grid-template-rows: 200px 200px 450px 200px 210px;
+        grid-template-areas: "queencontraras" "quienfue" "img" "cuandonacio""comomurio";
+        text-align: center;
+        .comomurio{
+            padding-top: 10px;
+            grid-area: comomurio;
+        }
+        .quienfue{  
+            padding-top: 10px;
+            grid-area: quienfue;
+        }
+        .queencontraras{ 
+            padding-top: 20px;
+            grid-area: queencontraras;
+        }
+        .cuandonacio{
+            padding-top: 10px;
+            padding-bottom: 5px;
+            grid-area: cuandonacio;
+        }
+        &--imagen{
+            padding-bottom: 30px;
+            padding-left: px;
+            height:450px;
+        }
+        & h2{
+            font-size: 1rem;
+        }
+        & p{
+            font-size: 1rem;
+        }
+    }
+}
+@media (max-width: 1024px){
+    .info{
+        display: grid;
+        grid-template-columns: 350px;
+        grid-template-rows: 200px 200px 450px 200px 210px;
+        grid-template-areas: "queencontraras" "quienfue" "img" "cuandonacio""comomurio";
+        text-align: center;
+        .comomurio{
+            padding-top: 10px;
+            grid-area: comomurio;
+        }
+        .quienfue{  
+            padding-top: 10px;
+            grid-area: quienfue;
+        }
+        .queencontraras{ 
+            padding-top: 20px;
+            grid-area: queencontraras;
+        }
+        .cuandonacio{
+            padding-top: 10px;
+            padding-bottom: 5px;
+            grid-area: cuandonacio;
+        }
+        &--imagen{
+            padding-bottom: 30px;
+            padding-left: px;
+            height:450px;
+        }
+        & h2{
+            font-size: 1rem;
+        }
+        & p{
+            font-size: 1rem;
+        }
+    }
+}

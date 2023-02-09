@@ -1,0 +1,47 @@
+                                                            /* Records */
+.records{
+    display: grid;
+    grid-template-columns: 1200px 300px ;
+    grid-template-rows: 1fr;
+    grid-template-areas: "ul img1";
+    &__ul{
+        padding-top: 30px;
+        padding-left: 30px;
+        list-style-type: square;
+        font-size: 1.5rem;
+    }
+    &__contenedor{
+        grid-area: ul;
+    }
+    &__img {
+        grid-area: img1;
+        padding-left: 30px;
+        padding-top: 30px;
+        height: 950px;
+        width: 650px;
+    }
+    &__h1{
+        display: flex;
+        justify-content: center;
+    }
+}
+@media (max-width: 1024px){
+    .records{
+        display: grid;
+        grid-template-columns: 420px;
+        grid-template-rows: 1250px 420px;
+        grid-template-areas: "ul""img1";  
+        &__ul{
+            padding-top: 30px;
+            padding-left: 30px;
+            list-style-type: square;
+            font-size: 1rem;
+        }
+        &__img {
+            grid-area: img1;
+            padding: 30px;
+            height: 420px;
+            width: 420px;
+        }
+    }
+}
